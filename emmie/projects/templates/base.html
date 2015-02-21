@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    %for css in assets["all_css"].urls():
+    <link href="${css}" rel="stylesheet">
+    %endfor
+    %for js in assets["all_js"].urls():
+    <script src="${js}"></script>
+    %endfor
+</head>
+<body>
+${next.body()}
+</body>
+</html>

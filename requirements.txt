@@ -1,0 +1,15 @@
+uwsgi
+mako
+webob
+webdispatch
+webhelpers2
+waitress
+whitenoise
+webassets
+repoze.tm2
+zope.sqlalchemy
+sqlalchemy
+backlash
+rutter
+coverage
+testfixtures
