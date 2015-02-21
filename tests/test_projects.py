@@ -11,7 +11,7 @@ import webob
 class MyTestCase(unittest.TestCase):
 
     def _get_target(self):
-        from emmie.projects.app import ProjectApplication
+        from emmie.projects.wsgi import ProjectApplication
         return ProjectApplication
 
     def _make_one(self, *args, **kwargs):

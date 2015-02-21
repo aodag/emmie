@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 import os
-from .app import ProjectApplication
+from .wsgi import ProjectApplication
 from mako.lookup import TemplateLookup
 
 
