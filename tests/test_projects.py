@@ -1,6 +1,8 @@
 # -*- coding:utf-8 -*-
 import unittest
+
 from testfixtures import compare, Comparison as C
+
 from emmie.testing import (
     DummyRenderer,
     DummyTemplateLookup,
@@ -11,7 +13,7 @@ import webob
 class MyTestCase(unittest.TestCase):
 
     def _get_target(self):
-        from emmie.projects.wsgi import ProjectApplication
+        from emmie.app.projects.wsgi import ProjectApplication
         return ProjectApplication
 
     def _make_one(self, *args, **kwargs):

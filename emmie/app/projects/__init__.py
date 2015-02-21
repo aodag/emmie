@@ -1,6 +1,7 @@
 # -*- coding:utf-8 -*-
 import os
-from .wsgi import ProjectApplication
+
+from emmie.app.projects.wsgi import ProjectApplication
 from mako.lookup import TemplateLookup
 
 

@@ -1,9 +1,10 @@
 # -*- coding:utf-8 -*-
 import argparse
+
 import waitress
 from whitenoise import WhiteNoise
 from backlash import DebuggedApplication
-from emmie.projects import make_project_app
+from emmie.app.projects import make_project_app
 from emmie.assetbundles import assets
 from rutter.urlmap import URLMap
 
