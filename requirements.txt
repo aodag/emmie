@@ -13,3 +13,7 @@ backlash
 rutter
 coverage
 testfixtures
+psycopg2
+alembic
+babel
+pytz

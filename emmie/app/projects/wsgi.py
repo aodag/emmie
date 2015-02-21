@@ -10,7 +10,6 @@ class ProjectApplication(URLDispatcher):
             "templates": templates,
         }
         super(ProjectApplication, self).__init__(extra_environ=extra_environ)
-        self.templates = templates
         self.assets = assets
         self.repository = repository
 
@@ -19,5 +18,6 @@ class ProjectApplication(URLDispatcher):
     @wsgify
     @templating("index.html")
     def index(self, request):
-        context = dict(assets=self.assets)
-        return context
+        projects = self.repository.values()
+        return dict(assets=self.assets,
+                    projects=projects)
